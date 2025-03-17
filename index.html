@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="p5.js"></script>
+</head>
+<body>
+    <h1>Sorting Visualizer</h1>
+    <div>
+        <select id="algorithm">
+            <option value="bubble">Bubble Sort</option>
+            <option value="selection">Selection Sort</option>
+            <option value="insertion">Insertion Sort</option>
+            <option value="merge">Merge Sort</option>
+            <option value="quick">Quick Sort</option>
+        </select>
+        <div>
+            <input type="range" id="arraySize" min="10" max="100" value="10">
+            <label id="arraySizeLabel" for="arraySize">10</label>
+        </div>
+        <div>
+            <input type="range" id="speed" min="1" max="100" value="50">
+            <label for="speed">1x</label>
+        </div>
+        <div>
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="random">Random</button>
+        </div>
+    </div>
+    <br>
+    <script src="script.js"></script>
+</body>
+</html>
