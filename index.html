@@ -8,7 +8,7 @@
 <body>
     <h1>Sorting Visualizer</h1>
     <div>
-        <select id="algorithm">
+        <select id="algo">
             <option value="bubble">Bubble Sort</option>
             <option value="selection">Selection Sort</option>
             <option value="insertion">Insertion Sort</option>
@@ -16,20 +16,23 @@
             <option value="quick">Quick Sort</option>
         </select>
         <div>
-            <input type="range" id="arraySize" min="10" max="100" value="10">
-            <label id="arraySizeLabel" for="arraySize">10</label>
+            <input type="range" id="size" min="10" max="100" value="20">
+            <label id="sizeLabel" for="size">10</label>
+        </div>
+        <div style="display:flex">
+            <p>Slow</p>
+            <input type="range" id="speed" min="1" max="10" value="5">
+            <p>Fast</p>
         </div>
         <div>
-            <input type="range" id="speed" min="1" max="100" value="50">
-            <label for="speed">1x</label>
-        </div>
-        <div>
-            <button id="start">Start</button>
-            <button id="stop">Stop</button>
+            <button id="play">Play</button>
             <button id="random">Random</button>
         </div>
     </div>
     <br>
+    <script src="insertionSort.js"></script>
+    <script src="selectionSort.js"></script>
+    <script src="bubbleSort.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
