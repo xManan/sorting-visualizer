@@ -39,8 +39,8 @@ function getAlgo(name) {
             return new SelectionSort(bar.heights)
         case 'insertion':
             return new InsertionSort(bar.heights)
-        // case 'merge':
-        //     return new MergeSort(bar.heights)
+        case 'merge':
+            return new MergeSort(bar.heights)
         // case 'quick':
         //     return new QuickSort(bar.heights)
         default:

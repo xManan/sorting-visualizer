@@ -15,7 +15,7 @@ class InsertionSort {
             this.i++
             this.j = this.i - 1
         }
-        return this.i === this.arr.length
+        return this.i >= this.arr.length
     }
 
     reset(arr) {

@@ -17,7 +17,7 @@ class SelectionSort {
             this.i++
             this.j = this.i
         }
-        return this.i === this.arr.length - 1
+        return this.i >= this.arr.length - 1
     }
 
     reset(arr) {
